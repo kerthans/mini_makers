@@ -1,0 +1,25 @@
+<view class="container">
+  <!-- 轮播图 -->
+  <swiper class="index-banner" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{4000}}" duration="{{1000}}">
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" mode="aspectFill" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!-- 菜单 -->
+  <view class="index-menu">
+    <block wx:for="{{indexmenu}}" wx:key="{{item.url}}">
+      <!-- 判断是否为“开门”功能 -->
+      <view wx:if="{{item.text === '开门'}}" class="index-menu-item" bindtap="opendoor">
+        <image src="{{item.icon}}"></image>
+        <text>{{item.text}}</text>
+      </view>
+      <navigator wx:else class="index-menu-item" url="../{{item.url}}/{{item.url}}">
+        <image src="{{item.icon}}"></image>
+        <text>{{item.text}}</text>
+      </navigator>
+    </block>
+  </view>
+</view>
