@@ -1,0 +1,15 @@
+<!--pages/index/index.wxml-->
+<van-search value="abc" placeholder="请输入搜索关键词" />
+<view class="scroll-view">
+  <swiper>
+    <swiper-item id="1">
+      <image src="/assets/7b4a3d8a7908b87fa3d3cb4459a5bd6.jpg" mode="aspectFit"></image>
+    </swiper-item>
+    <swiper-item id="2">
+      <image src="/assets/8adf5944be6ddf78ee1ffa84e0dbbc4.jpg" mode="aspectFit"></image>
+    </swiper-item>
+    <swiper-item id="3">
+      <image src="/assets/a053ea6f49eb26c7c32917f6a997126.jpg" mode="aspectFit"></image>
+    </swiper-item>
+  </swiper>
+</view>
