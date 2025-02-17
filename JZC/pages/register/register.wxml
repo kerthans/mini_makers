@@ -1,0 +1,66 @@
+<view class="container">
+  
+  <view class="content">
+    <image class="background" src="data:{{image1.filetype}};base64,{{image1.data}}" alt="{{image1.alt_text}}"></image>
+    <view class="SCU">SCU Makers</view>
+    <image class="dial" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzMyLjUiIGhlaWdodD0iNjI3LjcwMzM2OTE0MDYyNSIgdmlld0JveD0iMCAwIDMzMi41IDYyNy43MDMzNjkxNDA2MjUiIGZpbGw9Im5vbmUiPgo8ZyBmaWx0ZXI9InVybCgjZmlsdGVyXzIwXzEyKSI+CjxwYXRoIGQ9Ik0zMDMuNjcgMTAuODQzNEMyOTguMTggMi4yMjc0IDI4NS42ODEgMi4wMDAwMyAyNzkuODcgMTAuNDAzNEwyNTguNSA0MS4zMDM0QzI1NS44MzIgNDUuMTYxNiAyNTEuNDQxIDQ3LjQ2MzQgMjQ2Ljc1IDQ3LjQ2MzRMODYuODUgNDcuNDYzNEM4MS45Njg4IDQ3LjQ2MzQgNzcuNDMzMSA0NC45Njk5IDc0LjgxIDQwLjg1MzRMNTUuOCAxMS4wMzM0QzUwLjI3OTIgMi4zNjk2IDM3LjY5NDUgMi4xODk4NCAzMS45MyAxMC42OTM0TDkuNDYgNDMuODMzNEM3Ljg1NjMxIDQ2LjE5OTEgNyA0OC45OTU0IDcgNTEuODUzNEw3IDk4LjQxMzRDNyA5OC40Mzg5IDcgOTguNDY4IDcgOTguNDkzNEw0IDU5Ni4yMjNDNCA2MDkuNDc4IDE0LjI0NTIgNjIxLjcwMyAyNy41IDYyMS43MDNMMjk5LjUgNjIxLjcwM0MzMTIuNzU1IDYyMS43MDMgMzI4LjUgNjA5LjQ3OCAzMjguNSA1OTYuMjIzTDMyNyA3Ni43MDM0QzMyNyA3Ni42NjkzIDMyNyA3Ni42Mzc1IDMyNyA3Ni42MDM0TDMyNyA1MS42MzM0QzMyNyA0OC45MTM1IDMyNi4yMjIgNDYuMjQ3MiAzMjQuNzYgNDMuOTUzNEwzMDMuNjcgMTAuODQzNFoiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOm5vcm1hbCIgZmlsbD0iI0ZGRkZGRiIgPgo8L3BhdGg+CjwvZz4KPGRlZnM+CjxmaWx0ZXIgaWQ9ImZpbHRlcl8yMF8xMiIgeD0iMCIgeT0iMCIgd2lkdGg9IjMzMi41IiBoZWlnaHQ9IjYyNy43MDMzNjkxNDA2MjUiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KPGZlRmxvb2QgZmxvb2Qtb3BhY2l0eT0iMCIgcmVzdWx0PSJmZUZsb29kSWRfMjBfMTIiLz4KPGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMTI3IDAiIHJlc3VsdD0iaGFyZEFscGhhXzIwXzEyIi8+CjxmZU9mZnNldCBkeD0iMCIgZHk9IjIiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMiIvPgo8ZmVDb21wb3NpdGUgaW4yPSJoYXJkQWxwaGFfMjBfMTIiIG9wZXJhdG9yPSJvdXQiLz4KPGZlQ29sb3JNYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAuMjUgMCIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluMj0iZmVGbG9vZElkXzIwXzEyIiByZXN1bHQ9ImRyb3BTaGFkb3dfMV8yMF8xMiIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluPSJTb3VyY2VHcmFwaGljIiBpbjI9ImRyb3BTaGFkb3dfMV8yMF8xMiIgcmVzdWx0PSJzaGFwZV8yMF8xMiIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K"></image>
+    <button class="button" bindtap="handleRegister">注  册</button>
+    <button class="code" bindtap="getVerifyCode">获取验证码</button>
+    <view class="svg"></view>
+    <view class="register-title">注册 SCU Makers 小程序</view>
+    <view class="register-content">
+      <form>
+        <view class="form-item">
+          <label>邮箱</label>
+          <input class="preinput {{isFocused1 ? 'focused' : ''}}" type="text" placeholder="你的邮箱" value="{{email}}" bindfocus="handleFocus1" bindinput="handleEmailInput"
+    bindblur="handleBlur1"/>
+        </view>
+        <view class="form-item">
+          <label>验证码</label>
+          <input class="preinput {{isFocused2 ? 'focused' : ''}}" type="text" placeholder="验证码" value="{{verifyCode}}"
+      bindinput="handleVerifyCodeInput" bindfocus="handleFocus2"
+    bindblur="handleBlur2"/>
+        </view>
+        <view class="form-item" bindtap="handleContainerClick">
+          <label>密码</label>
+          <input
+          class="preinput {{isFocused3 ? 'focused' : ''}}"
+           type="{{isPasswordVisible1 ? 'text' : 'password'}}"
+           placeholder="密码"
+           value="{{password}}"
+           bindinput="handlePasswordInput"
+           bindfocus="handleFocus3"
+           bindblur="handleBlur3"
+           focus="{{isFocus1}}"
+          />
+          <image
+          src="{{isPasswordVisible1 ? 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yNCAzNkMzNS4wNDU3IDM2IDQ0IDI0IDQ0IDI0QzQ0IDI0IDM1LjA0NTcgMTIgMjQgMTJDMTIuOTU0MyAxMiA0IDI0IDQgMjRDNCAyNCAxMi45NTQzIDM2IDI0IDM2WiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMjQgMjlDMjYuNzYxNCAyOSAyOSAyNi43NjE0IDI5IDI0QzI5IDIxLjIzODYgMjYuNzYxNCAxOSAyNCAxOUMyMS4yMzg2IDE5IDE5IDIxLjIzODYgMTkgMjRDMTkgMjYuNzYxNCAyMS4yMzg2IDI5IDI0IDI5WiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=' : 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik02IDE2QzYuNjM0NzIgMTcuMjE5MyA3LjU5NjQ2IDE4LjM1MDQgOC44MjI3NiAxOS4zNTU0QzEyLjI2MSAyMi4xNzMzIDE3Ljc3OSAyNCAyNCAyNEMzMC4yMjEgMjQgMzUuNzM5IDIyLjE3MzMgMzkuMTc3MiAxOS4zNTU0QzQwLjQwMzUgMTguMzUwNCA0MS4zNjUzIDE3LjIxOTMgNDIgMTYiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMjguOTc3NSAyNEwzMS4wNDggMzEuNzI3NCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0zNy4zNTM1IDIxLjM1MzZMNDMuMDEwMyAyNy4wMTA0IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTUuMDAwMDQgMjcuMDEwM0wxMC42NTY5IDIxLjM1MzQiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMTYuOTI3OCAzMS43Mjc2TDE4Ljk5ODMgMjQuMDAwMSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg=='}}"
+          catchtap="togglePasswordVisibility1"
+          data-visible="{{isPasswordVisible1}}"
+          class="password-toggle-icon"
+          />
+        </view>
+        <view class="form-item" bindtap="handleContainerClick">
+          <label>确认密码</label>
+          <input
+          class="preinput {{isFocused4 ? 'focused' : ''}}"
+           type="{{isPasswordVisible2 ? 'text' : 'password'}}"
+           placeholder="确认密码"
+           value="{{confirmPassword}}"
+           bindinput="handleConfirmPasswordInput"
+           bindfocus="handleFocus4"
+           bindblur="handleBlur4"
+           focus="{{isFocus2}}"
+          />
+          <image
+            src="{{isPasswordVisible2 ? 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yNCAzNkMzNS4wNDU3IDM2IDQ0IDI0IDQ0IDI0QzQ0IDI0IDM1LjA0NTcgMTIgMjQgMTJDMTIuOTU0MyAxMiA0IDI0IDQgMjRDNCAyNCAxMi45NTQzIDM2IDI0IDM2WiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMjQgMjlDMjYuNzYxNCAyOSAyOSAyNi43NjE0IDI5IDI0QzI5IDIxLjIzODYgMjYuNzYxNCAxOSAyNCAxOUMyMS4yMzg2IDE5IDE5IDIxLjIzODYgMTkgMjRDMTkgMjYuNzYxNCAyMS4yMzg2IDI5IDI0IDI5WiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=' : 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik02IDE2QzYuNjM0NzIgMTcuMjE5MyA3LjU5NjQ2IDE4LjM1MDQgOC44MjI3NiAxOS4zNTU0QzEyLjI2MSAyMi4xNzMzIDE3Ljc3OSAyNCAyNCAyNEMzMC4yMjEgMjQgMzUuNzM5IDIyLjE3MzMgMzkuMTc3MiAxOS4zNTU0QzQwLjQwMzUgMTguMzUwNCA0MS4zNjUzIDE3LjIxOTMgNDIgMTYiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMjguOTc3NSAyNEwzMS4wNDggMzEuNzI3NCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0zNy4zNTM1IDIxLjM1MzZMNDMuMDEwMyAyNy4wMTA0IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTUuMDAwMDQgMjcuMDEwM0wxMC42NTY5IDIxLjM1MzQiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMTYuOTI3OCAzMS43Mjc2TDE4Ljk5ODMgMjQuMDAwMSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg=='}}"
+            catchtap="togglePasswordVisibility2"
+            data-visible="{{isPasswordVisible2}}"
+            class="password-toggle-icon"
+          />
+        </view>
+      </form>
+      <text class="login-link" bindtap="navigateToRegister">返回登录界面</text>
+    </view>
+  </view>
+</view>

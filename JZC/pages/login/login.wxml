@@ -1,0 +1,57 @@
+<view class="custom-nav">
+  <!-- 这里可以添加返回按钮等自定义内容 -->
+</view>
+<view class="SCU">SCU Makers</view>
+<view>  
+  <!--假定背景图id为1，猫猫id为2  -->
+  <image class="background" src="data:{{image1.filetype}};base64,{{image1.data}}" alt="{{image1.alt_text}}"></image>
+  <image class="cat" src="data:{{image2.filetype}};base64,{{image2.data}}" alt="{{image2.alt_text}}"></image>
+  <image class="dial" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzI4IiBoZWlnaHQ9IjUzMy43MDM4NTc0MjE4NzUiIHZpZXdCb3g9IjAgMCAzMjggNTMzLjcwMzg1NzQyMTg3NSIgZmlsbD0ibm9uZSI+CjxnIGZpbHRlcj0idXJsKCNmaWx0ZXJfMTdfNzUpIj4KPHBhdGggZD0iTTMwMC42NyAxMC44NDM1QzI5NS4xOCAyLjIyNzQ4IDI4Mi42ODEgMi4wMDAxMiAyNzYuODcgMTAuNDAzNUwyNTUuNSA0MS4zMDM1QzI1Mi44MzIgNDUuMTYxNyAyNDguNDQxIDQ3LjQ2MzUgMjQzLjc1IDQ3LjQ2MzVMODMuODUgNDcuNDYzNUM3OC45Njg4IDQ3LjQ2MzUgNzQuNDMzMSA0NC45NyA3MS44MSA0MC44NTM1TDUyLjggMTEuMDMzNUM0Ny4yNzkyIDIuMzY5NjkgMzQuNjk0NSAyLjE4OTkzIDI4LjkzIDEwLjY5MzVMNi40NiA0My44MzM1QzQuODU2MzIgNDYuMTk5MiA0IDQ4Ljk5NTUgNCA1MS44NTM1TDQgOTguNDEzNUM0IDk4LjQzOSA0LjAwMDA3IDk4LjQ2NDUgNC4wMDAyIDk4LjQ4OTlMNC4wMDAyIDUwMy43MDRDNC4wMDAyIDUxNi45NTkgMTQuNzQ1NCA1MjcuNzA0IDI4LjAwMDIgNTI3LjcwNEwzMDAgNTI3LjcwNEMzMTMuMjU1IDUyNy43MDQgMzI0IDUxNi45NTkgMzI0IDUwMy43MDRMMzI0IDc2LjcwMzVDMzI0IDc2LjY2OTQgMzI0IDc2LjYzNTMgMzI0IDc2LjYwMTJMMzI0IDUxLjYzMzVDMzI0IDQ4LjkxMzYgMzIzLjIyMiA0Ni4yNDczIDMyMS43NiA0My45NTM1TDMwMC42NyAxMC44NDM1WiIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6bm9ybWFsIiBmaWxsPSIjRkZGRkZGIiA+CjwvcGF0aD4KPC9nPgo8ZGVmcz4KPGZpbHRlciBpZD0iZmlsdGVyXzE3Xzc1IiB4PSIwIiB5PSIwIiB3aWR0aD0iMzI4IiBoZWlnaHQ9IjUzMy43MDM4NTc0MjE4NzUiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KPGZlRmxvb2QgZmxvb2Qtb3BhY2l0eT0iMCIgcmVzdWx0PSJmZUZsb29kSWRfMTdfNzUiLz4KPGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMTI3IDAiIHJlc3VsdD0iaGFyZEFscGhhXzE3Xzc1Ii8+CjxmZU9mZnNldCBkeD0iMCIgZHk9IjIiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMiIvPgo8ZmVDb21wb3NpdGUgaW4yPSJoYXJkQWxwaGFfMTdfNzUiIG9wZXJhdG9yPSJvdXQiLz4KPGZlQ29sb3JNYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAuMjUgMCIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluMj0iZmVGbG9vZElkXzE3Xzc1IiByZXN1bHQ9ImRyb3BTaGFkb3dfMV8xN183NSIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluPSJTb3VyY2VHcmFwaGljIiBpbjI9ImRyb3BTaGFkb3dfMV8xN183NSIgcmVzdWx0PSJzaGFwZV8xN183NSIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K"></image>
+  <button class="button" bindtap="handleLogin">登  录</button>
+  <view class="svg"></view>
+</view>
+
+<view class="login-title">登录 SCU Makers 小程序</view>
+<view class="login-content">
+  <!-- 登录表单内容 -->
+  <form>
+    <view class="form-item">
+  <label>邮箱</label>
+  <input
+    class="preinput {{isFocused1 ? 'focused' : ''}}"
+    type="text"
+    placeholder="你的邮箱"
+    cursor="{{cursorPosition}}"
+    value="{{email}}"
+    bindinput="handleEmailInput"
+    bindfocus="handleFocus1"
+    bindblur="handleBlur1"
+  />
+</view>
+
+<view class="form-item" bindtap="handleContainerClick">
+  <label>密码</label>
+  <input
+    class="preinput {{isFocused2 ? 'focused' : ''}}"
+    type="{{isPasswordVisible ? 'text' : 'password'}}"
+    placeholder="密码"
+    value="{{password}}"
+    bindinput="handlePasswordInput"
+    bindfocus="handleFocus2"
+    bindblur="handleBlur2"
+    focus="{{isFocus}}"
+  />
+  <image
+    src="{{isPasswordVisible ? 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yNCAzNkMzNS4wNDU3IDM2IDQ0IDI0IDQ0IDI0QzQ0IDI0IDM1LjA0NTcgMTIgMjQgMTJDMTIuOTU0MyAxMiA0IDI0IDQgMjRDNCAyNCAxMi45NTQzIDM2IDI0IDM2WiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMjQgMjlDMjYuNzYxNCAyOSAyOSAyNi43NjE0IDI5IDI0QzI5IDIxLjIzODYgMjYuNzYxNCAxOSAyNCAxOUMyMS4yMzg2IDE5IDE5IDIxLjIzODYgMTkgMjRDMTkgMjYuNzYxNCAyMS4yMzg2IDI5IDI0IDI5WiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=' : 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik02IDE2QzYuNjM0NzIgMTcuMjE5MyA3LjU5NjQ2IDE4LjM1MDQgOC44MjI3NiAxOS4zNTU0QzEyLjI2MSAyMi4xNzMzIDE3Ljc3OSAyNCAyNCAyNEMzMC4yMjEgMjQgMzUuNzM5IDIyLjE3MzMgMzkuMTc3MiAxOS4zNTU0QzQwLjQwMzUgMTguMzUwNCA0MS4zNjUzIDE3LjIxOTMgNDIgMTYiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMjguOTc3NSAyNEwzMS4wNDggMzEuNzI3NCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0zNy4zNTM1IDIxLjM1MzZMNDMuMDEwMyAyNy4wMTA0IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTUuMDAwMDQgMjcuMDEwM0wxMC42NTY5IDIxLjM1MzQiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMTYuOTI3OCAzMS43Mjc2TDE4Ljk5ODMgMjQuMDAwMSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg=='}}"
+    catchtap="togglePasswordVisibility"
+    data-visible="{{isPasswordVisible}}"
+    class="password-toggle-icon"
+  />
+</view>
+    <view class="else">
+    <checkbox checked="{{rememberMe}}" bindtap="toggleRememberMe">记住我</checkbox>
+    <text class="forget-password" bindtap="handleForgetPassword">忘记密码?</text>
+    </view>
+  </form>
+  <text class="register-link" bindtap="navigateToRegister">注册账号</text>
+</view>

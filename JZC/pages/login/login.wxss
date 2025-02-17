@@ -1,0 +1,193 @@
+/* pages/login/login.wxss */
+/* 图片 */
+.background {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -999; /* 图片叠加在底部 */
+}
+.dial {
+  /*对话框*/
+  display: flex;
+  position: fixed;
+  left: 10%;
+  top: -2%;
+  width: 79.9vw;
+  height: 95vh;
+  opacity: 1;
+  z-index: -998; /* 图片叠加在底部 */
+}
+.SCU{
+  display: flex;
+  position: fixed;
+  left: 23%;
+  top: 11%;
+  width: 202rpx;
+  height: 48rpx;
+  opacity: 1;
+  font-size: 70rpx;
+  font-weight: 800;
+  letter-spacing: 0px;
+  line-height: 47.74rpx;
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap;  
+}
+.cat {
+  /* 吉祥物*/
+  display: flex;
+  position: fixed;
+  left: 20%;
+  top: 77.5%;
+  width: 62vw;
+  height: 20vh;
+  opacity: 1;
+  z-index: -997; /* 图片叠加在底部 */
+}
+.svg{
+  display: flex;
+  position: fixed;
+  background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSI+CjxwYXRoIGQ9Ik0xOS43OTAzIDExLjM4NzFMMTkuNzA3MSAxMS4yOTI5TDE0LjcwNzEgNi4yOTI4OUMxNC4zMTY2IDUuOTAyMzcgMTMuNjgzNCA1LjkwMjM3IDEzLjI5MjkgNi4yOTI4OUMxMi45MzI0IDYuNjUzMzggMTIuOTA0NyA3LjIyMDYxIDEzLjIwOTcgNy42MTI5TDEzLjI5MjkgNy43MDcxMUwxNi41ODUgMTFMNSAxMUM0LjQ0NzcyIDExIDQgMTEuNDQ3NyA0IDEyQzQgMTIuNTEyOCA0LjM4NjA0IDEyLjkzNTUgNC44ODMzOCAxMi45OTMzTDUgMTNMMTYuNTg1IDEzTDEzLjI5MjkgMTYuMjkyOUMxMi45MzI0IDE2LjY1MzQgMTIuOTA0NyAxNy4yMjA2IDEzLjIwOTcgMTcuNjEyOUwxMy4yOTI5IDE3LjcwNzFDMTMuNjUzNCAxOC4wNjc2IDE0LjIyMDYgMTguMDk1MyAxNC42MTI5IDE3Ljc5MDNMMTQuNzA3MSAxNy43MDcxTDE5LjcwNzEgMTIuNzA3MUMyMC4wNjc2IDEyLjM0NjYgMjAuMDk1MyAxMS43Nzk0IDE5Ljc5MDMgMTEuMzg3MVoiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOm5vcm1hbCIgZmlsbD0iI0ZGRkZGRiIgPgo8L3BhdGg+Cjwvc3ZnPgo=);
+  width:8vw;
+  height:10vh;
+  top: 60.2%;
+  right: 32%;
+  background-size: contain;
+  z-index: 999;
+}
+.button {
+  background-color: #00ADB5;
+  color: white;
+  border-radius: 30rpx;
+  width: 70vw; /* 使用视口宽度单位 */
+  height: 5.9vh; /* 使用视口高度单位 */
+  opacity: 1;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* 固定定位 */
+  bottom: 35.1vh; /* 距离底部 10% 视口高度 */
+  left: 50%; /* 水平居中 */
+  transform: translateX(-50%); /* 水平居中 */
+  z-index: 998;
+}
+/* 图片结束 */
+.custom-nav {
+  height: 44px; /* 类似原生导航栏高度 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3); /* 可设置半透明背景 */
+  color: white;
+}
+.login-content {
+  display: block;
+  position: fixed;
+  left: 13%;
+  top: 21%;
+  width: 70vw; 
+  height: 52vh; 
+  padding: 120rpx 20rpx 20rpx; /* 根据图片和内容布局调整内边距 */
+  box-sizing: border-box; /* 使内边距包含在元素宽度内 */
+}
+.login-title {
+  display: flex;
+  position: fixed;
+  left:27.5%;
+  top: 25%;
+  width: 400rpx;
+  height: 26rpx;
+  opacity: 1;
+  font-size: 30rpx;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 26rpx;
+  color: rgba(34, 40, 49, 1);
+  text-align: center;
+  vertical-align: top;
+  z-index: 1; /* 设置较高的层级 */
+}
+/* 密码与你的邮箱的边距 */
+.form-item {
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+  color: #00ADB5;
+  font-size: 30rpx;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 26rpx;
+}
+.form-item label {
+  display: block;
+  margin-bottom: 30rpx;
+  margin-left: 20rpx;
+  color: #00ADB5;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+/* 默认样式 */
+.preinput {
+  border: 1px solid #ccc;
+  flex: 1;
+  /* padding: 10rpx; */
+  font-weight: 500;
+  font-size: 30rpx;
+  left: 30rpx;
+  border-radius: 4px;
+  outline: none;
+  text-indent: 30rpx;
+  padding-left: 30rpx;
+}
+
+/* 选中时的样式 */
+.preinput.focused {
+  border-color: #00ADB5;
+  box-shadow: 0 0 5px rgba(0, 173, 181, 0.5);
+}
+.password-toggle-icon {
+  position: absolute;
+  right: 20rpx;
+  margin-top: -70rpx;
+  width: 50rpx;
+  height: 50rpx;
+  cursor: pointer;
+  z-index: 999;
+}
+/* 邮箱与密码边距 */
+.form-item input {
+  width: 102%;
+  height: 70rpx;
+  padding: 8rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 20rpx;
+  pointer-events: auto;
+}
+/* 记住我与忘记密码 */
+.else {
+  display: block;
+  position: fixed;
+  top: 53%;
+  left: 18%;
+  width: 63vw;
+}
+.forget-password {
+  float: right;
+  color: #7D8592;
+  cursor: pointer;
+}
+.register-link {
+  display: flex;
+  position: fixed;
+  white-space: nowrap; /* 防止文本换行 */
+  text-align: center;
+  left: 40.5%;
+  top: 67.5%;
+  color: #00ADB5;
+  cursor: pointer;
+  font-size: 40rpx;
+}
