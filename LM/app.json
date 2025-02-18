@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/MyPoints/MyPoints",
+    "pages/3D/3D",
+    "pages/nav/nav",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationStyle": "default"
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

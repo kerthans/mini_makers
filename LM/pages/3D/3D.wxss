@@ -1,0 +1,186 @@
+/* pages/3D/3D.wxss */
+
+page{
+height:1626rpx;
+background-color: #393E46;
+}
+
+/*表格*/
+.container { 
+  width: 634.82rpx;
+  height: 877.94rpx;
+  background-color: #FFFFFF;
+  padding: 17.44rpx;
+  margin: auto;
+margin-top: 34.44rpx;
+margin-bottom: 34.44rpx;
+border: 2.488px solid #FFFFFF;
+border-radius: 34.88rpx ;
+}
+
+
+/* 容器样式 */
+.form-item {
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  justify-content: flex-start; /* 水平起始对齐 */
+  padding: 15.44rpx; /* 根据需要调整 */
+}
+
+
+/* 标签样式 */
+.label1 {
+  font-size: 24.416rpx; /* 18号字体 */
+  font-family: 'siyuanheiti', sans-serif;/* 字体样式：siyuanheiti */
+  font-weight: bold;
+  color: #00ADB5; /* 标签颜色，可根据需要调整 */
+  margin-bottom: 22.44rpx; /* 标签与选项之间的间距 */
+}
+
+/* 单选框组样式 */
+.radio-group {
+  display: flex; /* 横向排列 */
+  align-items: center; /* 垂直居中 */
+  flex-wrap: wrap; /* 允许换行 */
+  width: 605.97rpx; /* 宽度 */
+  height: 44rpx; /* 高度 */
+  background-color: #FFFFFF;
+  border: 1.744rpx solid #FFFFFF; /* 边框样式 */
+  border-radius: 24.416rpx; /* 圆角样式 */
+  padding: 0rpx; /* 内边距 */
+}
+
+/* 单选框标签样式 */
+.radio-label {
+  font-size: 24.416rpx; /* 14号字体 */
+  font-family: 'siyuanheiti', sans-serif; /* 字体样式：siyuanheiti */
+  font-weight: bold;
+  color: #00ADB5; /* 标签颜色 */
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  margin-left: 25rpx; /* 每个选项之间的左间距 */
+  margin-right: 62rpx; /* 每个选项之间的右间距 */
+}
+
+/* 单选框样式 */
+.radio {
+  margin-right: 10rpx; /* 单选框与文字之间的间距 */
+  color: #E5E5E5;
+}
+
+/* 输入框样式 */
+.input {
+  font-size: 24.416rpx; /* 字体大小：14号字体 */
+  color: #7D8592; /* 字体颜色：深灰色 */
+  font-family: 'siyuanheiti', sans-serif; /* 字体样式：siyuanheiti */
+  background-color: #E5E5E5;
+  border: 1.744rpx solid #D8E0F0; /* 边框样式 */
+  border-radius: 24.416rpx; /* 圆角样式 */
+  padding: 10rpx; /* 内边距 */
+  width: 605.97rpx; /* 宽度 */
+  height: 91.96rpx;
+  box-sizing: border-box; /* 确保宽度包含内边距和边框 */
+}
+
+.input::after{
+  border-radius: 36.62rpx;
+  border: 0; 
+}
+
+/* 上传按钮样式 */
+.upload-btn {
+  font-size: 24.416rpx; /* 字体大小：14号字体 */
+  color: #7D8592; /* 字体颜色：深灰色 */
+  font-family: 'siyuanheiti', sans-serif; /* 字体样式：siyuanheiti */
+  background-color: #E5E5E5; /* 背景颜色 */
+  border: 1.744rpx solid #D8E0F0; /* 边框样式 */
+  border-radius: 24.416rpx; /* 圆角样式 */
+  padding: 10rpx; /* 内边距 */
+  width: 605.97rpx; /* 宽度 */
+  height: 91.96rpx; /* 高度 */
+  line-height: 91.96rpx; /* 使文字垂直居中 */
+  text-align: center; /* 使文字水平居中 */
+  display: flex;
+  align-items: center; /* 图标和文字垂直居中 */
+  justify-content: center; /* 图标和文字水平居中 */
+}
+
+.upload-btn::after{
+  border-radius: 36.62rpx;
+  border: 0; 
+}
+
+/* 上传图标样式 */
+.upload-icon {
+  width: 59.42rpx; /* 图标宽度 */
+  height: 56.03rpx; /* 图标高度 */
+  margin-right: 10rpx; /* 图标与文字之间的间距 */
+}
+
+/* 问号图标样式 */
+.question-icon {
+  width: 31.38rpx; /* 图标宽度 */
+  height: 31.39rpx; /* 图标高度 */
+  border-radius: 50%; /* 圆形 */
+  background-color: #FFFFFF; /* 背景颜色 */
+  color: #00ADB5; /* 图标颜色 */
+  font-size: 27rpx; /* 图标字体大小 */
+  font-family: 'siyuanheiti', sans-serif;/* 字体样式：siyuanheiti */
+  font-weight: bold;
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+
+  border: 4rpx solid #00ADB5; /* 圆环边框 */
+  margin-left: 476rpx; /* 更大的间距 */
+  margin-bottom: auto;
+}
+/*.zip 和 ？*/
+.label-container {
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  justify-content: flex-start; /* 左对齐 */
+}
+
+
+.container2 {
+  text-align: center;
+  text-align: center; /* 使文字水平居中 */
+  display: flex;
+  align-items: center; /* 图标和文字垂直居中 */
+  justify-content: center; /* 图标和文字水平居中 */
+}
+
+
+
+.btn2 {
+  width: 216.26rpx; /* 按钮宽度 */
+  height: 71.50rpx; /* 按钮高度 */
+  margin-top: 20rpx; /* 上边距 */
+  background-color: #00ADB5; /* 背景颜色 */
+  color: white; /* 文字颜色 */
+  font-family: 'siyuanheiti', sans-serif; /* 字体样式 */
+  border-radius: 36.62rpx; /* 圆角 */
+  display: flex; /* 使用 Flexbox 布局 */
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+  text-align: center; /* 确保文本内容水平居中 */
+  border: none; /* 移除边框 */
+  font-size: 31.92rpx; /* 字体大小 */
+}
+.btn2::after {
+  border-radius: 36.62rpx;
+  border: 0; 
+}
+
+
+/* 底部图片样式 */
+.bottom-image {
+  position: fixed; /* 固定位置 */
+  transform: translateX(-50%); /* 精确水平居中 */
+  width: 440.5344rpx; /* 图片宽度 */
+  height: 174.4rpx; /* 图片高度 */
+  background-color: transparent;
+  bottom: 0; /* 底部对齐 */
+  left: 50%; /* 水平居中 */
+}

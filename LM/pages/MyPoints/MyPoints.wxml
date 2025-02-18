@@ -1,0 +1,64 @@
+<!--pages/MyPoints/MyPoints.wxml-->
+<view class="container1">
+  <view class="header">
+    <view class="points-label">当前积分</view>
+    <view class="points-value">{{score}}</view>
+  </view>
+</view>
+
+
+<!--下半 切换-->
+
+<view class="tab">
+<text bindtap="changeItem" data-item="0" class="{{tab==0?'active':''}}">积分兑换</text>
+<text bindtap="changeItem" data-item="1" class="{{tab==1?'active':''}}">兑换历史</text>
+</view>
+
+<swiper current="{{tab}}" circular bindchange="onSwiperChange" style="height: 993.25936rpx;">
+  <!-- 积分兑换界面 -->
+  <swiper-item wx:if="{{tab === 0}}">
+      <scroll-view scroll-y="true" style="height: calc(100% - 100rpx);">
+        <view class="vertical-container">
+          <block wx:for="{{items}}" wx:key="index">
+            <view class="item-container">
+              <image src="{{item.image}}" class="item-image"></image>
+              <view class="item-details">
+                <text class="name">{{item.name}}</text>
+                <text class="description">{{item.description}}</text>
+              </view>
+              <button class="btn" bindtap="exchangeItem" data-url="{{item.exchangeUrl}}">兑换</button>
+            </view>
+          </block>
+        </view>
+        <view class="footer">
+        <text class="footer-text">没有喜欢的？其他兑换待开发中...</text>
+      </view>
+      </scroll-view>
+      
+  </swiper-item>
+
+  <!-- 兑换历史界面 -->
+  <swiper-item wx:if="{{tab === 1}}">
+    <scroll-view scroll-y="true" style="height: 993.25936rpx;">   <!-- 此处的height也可以设置为100%，但效果不佳 -->
+      <view class="vertical-container">
+        <block wx:for="{{history}}" wx:key="index">
+          <view class="item-container">
+            <image src="{{item.image}}" class="item-image"></image>
+            <view class="item-details2">
+              <text class="meg">兑换内容：{{item.name}}</text>
+              <text class="meg">时间：{{item.time}}</text>
+              <text class="meg">详情：{{item.details}}</text>
+            </view>
+            <view class="points-used">
+            <text class="points-used">{{item.pointsUsed}}</text>
+          </view>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>
+
+
+      <image class="bottom-image" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjUyLjYwMDA5NzY1NjI1IiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDI1Mi42MDAwOTc2NTYyNSAxMDAiIGZpbGw9Im5vbmUiPgo8cGF0aCBkPSJNMTk2IDczLjVMMjA0IDYwTDIxMi41IDczLjVMMjI4LjUgNzMuNUwyMzcgNjBMMjQ0IDczLjVMMjQ0IDEwMEwxOTYgMTAwTDAgMTAwTDcuNSA4OC41TDQxLjUgODguNUw1NiA3My41TDE5NiA3My41WiIgICBmaWxsPSIjRkZGRkZGIiA+CjwvcGF0aD4KPHJlY3QgeD0iMjEyIiB5PSI4MCIgd2lkdGg9IjMiIGhlaWdodD0iMTAiICAgZmlsbD0iIzAwQURCNSIgPgo8L3JlY3Q+CjxyZWN0IHg9IjIyOCIgeT0iODAiIHdpZHRoPSIzIiBoZWlnaHQ9IjEwIiAgIGZpbGw9IiMwMEFEQjUiID4KPC9yZWN0Pgo8cGF0aCBkPSJNODYgMTAwTDcyLjUgODlMNzcuNSA4OUw5MSAxMDBMODYgMTAwWiIgICBmaWxsPSIjMDBBREI1IiA+CjwvcGF0aD4KPHBhdGggZD0iTTI0MyA4NUwyNTIuNSA4MkwyNTIuNSA4NUwyNDMgODhMMjQzIDg1WiIgICBmaWxsPSIjRkZGRkZGIiA+CjwvcGF0aD4KPHBhdGggZD0iTTI0MyA5NEwyNTIuNiA5N0wyNTIuNiA5NEwyNDMgOTFMMjQzIDk0WiIgICBmaWxsPSIjRkZGRkZGIiA+CjwvcGF0aD4KPHJlY3QgeD0iMTk2IiB5PSIzNSIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEzIiAgIGZpbGw9IiMwMEFEQjUiID4KPC9yZWN0Pgo8cmVjdCB4PSIxNTQiIHk9IjAiIHdpZHRoPSIzMyIgaGVpZ2h0PSIyMiIgICBmaWxsPSIjMDBBREI1IiA+CjwvcmVjdD4KPC9zdmc+Cg=="></image>
+

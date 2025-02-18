@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "3D打印申请",
+  "navigationBarBackgroundColor": "#393E46", 
+ "enablePullDownRefresh": false,
+ "backgroundColor": "#efefef",
+ "backgroundTextStyle": "dark",
+ "navigationStyle": "default",
+  "usingComponents": {}
+}
