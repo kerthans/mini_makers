@@ -1,0 +1,275 @@
+.container {
+  background-color: #222831;
+  color: #FFFFFF;
+  min-height: 100vh;
+  padding: 20rpx;
+}
+
+/* 顶部导航栏 */
+.top-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* 宽度占满父容器 */
+  padding: 20rpx;
+  position: relative;
+}
+
+.edit-icon{
+  left:-170px;
+  margin-top: 32px;
+  width:22px;
+  height:22px;
+}
+
+.title{
+  display: flex;
+  margin-top:65rpx;
+  margin-right:-53rpx;
+  font-size:16px;
+}
+
+/* 用户信息区域 */
+.user-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-left:-240px;
+  margin-top:-510px;
+}
+
+.box1{
+  width: 160px; /* 可按需调整框框宽度 */
+  height: 23px; /* 可按需调整框框高度 */
+  margin-top: -560px; /* 框框与用户名称的间距，可按需调整 */
+  margin-left:-200px;
+  border-radius: 25rpx;
+}
+
+.box2{
+  width: 160px; /* 可按需调整框框宽度 */
+  height: 23px; /* 可按需调整框框高度 */
+  margin-top: -530px; /* 框框与用户名称的间距，可按需调整 */
+  margin-left:-200px;
+  border-radius: 25rpx;
+}
+.phone-icon{
+  width:18px;
+  height:18px;
+  margin-left:5px;
+  margin-top:3px;
+}
+.style-icon{
+  width:18px;
+  height:18px;
+  margin-left:5px;
+  margin-top:1px;
+}
+.copy-icon{
+  width:18px;
+  height:18px;
+  margin-left:170px;
+  margin-top:-20px;
+}
+
+.avatar {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: -230px;
+  margin-top:-660px;
+}
+
+.avatar image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 协会成员和积分 */
+.membership {
+  margin-top:-440px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.membership-label1 {
+  font-size: 38px;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-left:-5px;
+  margin-top:-140px;
+  margin-bottom:-3px;
+}
+.membership-label2 {
+  font-size: 38px;
+  color: #FFFFFF;
+  margin-top:2px;
+  font-weight: bold;
+  margin-left:3px;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+}
+
+.score-label {
+  font-size: 24px;
+  color: #FFE89E;
+  margin-top:-155px;
+  font-weight:bold;
+  margin-left:230px;
+}
+
+.score-value {
+  display: flex;
+  align-items: center;
+  margin-top:-60px;
+  width:87px;
+  height:53px;
+  border-radius: 15px;
+  margin-left:-60px;
+}
+
+.score-number {
+  font-size: 24px;
+  margin-left:20px;
+  margin-top:-3px;
+}
+
+.arrow-icon-white{
+  width:30px;
+  height:30px;
+  margin-left:-30px;
+  margin-top:-60px;
+}
+
+.separate{
+  width:65px;
+  height:100px;
+  margin-left:120px;
+  margin-top:-95px;
+}
+
+.function-list-container{
+position: absolute;
+margin-left:3rpx;
+margin-top: 600rpx;
+width: 760rpx;
+height: 900rpx;
+opacity: 1;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='431' height='583.8399047851562' viewBox='0 0 431 583.8399047851562' fill='none'%3E %3Cpath d='M394.27 5.51988C388.423 -1.6499 377.541 -1.86857 371.41 5.05988L344.17 35.8399L85.76 35.8399L61.15 5.65988C55.2654 -1.55613 44.3018 -1.72347 38.2 5.30988L3.67 45.1099C1.30337 47.8379 0 51.3284 0 54.9399L0 583.84L431 583.84L431 60.8399C431 58.3625 430.642 55.9694 429.97 53.7099C429.768 50.6026 428.598 47.6255 426.62 45.1999L394.27 5.51988Z' fill-rule='evenodd' fill='%23FFFFFF' %3E %3C/path%3E %3C/svg%3E");
+}
+
+.function-list {
+  margin-top: 70px;
+  height:420px;
+}
+
+.function-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18rpx 8rpx;
+  font-size: 24px;
+  color: #000000;
+  border-radius: 15rpx;
+  margin-bottom: 45rpx; /* 每个功能项之间的间距 */
+  font-weight: bold;
+  height:40px;
+  width:300px;
+  padding-left:20px;
+  margin-left:50px;
+}
+
+.arrow-icon {
+  width: 24px;                  /* 设置图标的宽度 */
+  height: 19px;                 /* 设置图标的高度 */
+  margin-left: -25px;            /* 图标和文本之间的间距 */
+}
+
+/* 底部导航栏 */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #222831;
+  padding: 10rpx 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height:52px;
+}
+
+.bottom-nav .nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  justify-content:center;
+}
+
+.bottom-nav .nav-item .community-icon {
+  width: 30px;    /* 设置图标的宽度 */
+  height: 30px;   /* 设置图标的高度 */
+}
+
+.bottom-nav .nav-item .nav-item-text {
+  font-size: 24rpx;  /* 设置文字的大小 */
+  margin-top: 5rpx;   /* 图标和文字之间的间距 */
+}
+
+.circle {
+  position: absolute; /* 绝对定位 */
+  left: 50%; /* 水平居中 */
+  transform: translateX(-48%); /* 使元素完全居中 */
+  width: 95px; /* 圆圈的直径 */
+  height: 95px; /* 圆圈的直径 */
+  background-color: #222831; /* 黑色背景 */
+  border-radius: 50%; /* 圆形 */
+}
+
+.green-circle {
+  width: 75px; /* 绿色圆圈的宽度，可根据需求调整 */
+  height: 75px; /* 绿色圆圈的高度，可根据需求调整 */
+  background-color:#00ADB5; /* 绿色背景 */
+  border-radius: 50%; /* 圆形 */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-53%, -53%); /* 使其在黑色圆圈内居中 */
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.icon-on-green-circle{
+  width: 47px;
+  height: 34px;
+}
+
+.bottom-nav .nav-item .community-icon{
+  width: 35px;                  /* 设置图标的宽度 */
+  height: 35px;
+  margin-top:-1px;
+  margin-bottom:-3px;
+}
+
+.me-icon{
+  margin-top:5px;
+  width: 28px;                  /* 设置图标的宽度 */
+  height: 28px;
+}
+
+.bottom-nav .nav-item.text1 {
+  font-size: 24rpx;
+  margin-top: -5px;
+  margin-right:10px;
+}
+
+.bottom-nav .nav-item.text2 {
+  font-size: 24rpx;
+  margin-top: -7px;
+}
