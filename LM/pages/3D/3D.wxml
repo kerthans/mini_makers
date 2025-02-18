@@ -1,0 +1,49 @@
+<!--pages/3D/3D.wxml-->
+
+<view class="container" >
+  <view class="form-item">
+    <text class="label1">姓名</text>
+    <input class="input" type="text" placeholder="  姓名" bindinput="bindNameInput"/>
+  </view>
+  <view class="form-item">
+    <text class="label1">电话</text>
+    <input  class="input"  type="text" placeholder="  电话" bindinput="bindPhoneInput"/>
+  </view>
+  
+  <view class="form-item">
+  <text class="label1">选择打印机</text>
+  <radio-group class="radio-group" bindchange="bindPrinterChange">
+    <label class="radio-label">
+      <radio class="radio" color="#E5E5E5" value="二基楼B101" />二基楼B101
+    </label>
+    <label class="radio-label">
+      <radio class="radio" color="#E5E5E5" value="i创街" />i创街
+    </label>
+  </radio-group>
+</view>
+
+  <view class="form-item">
+    <text class="label1">料量</text>
+    <input  class="input" type="text" placeholder="  料量" bindinput="bindMaterialInput"/>
+  </view>
+
+  <view class="form-item">
+    <view class="label-container">
+    <text class="label1">.zip 文件</text>
+    <view class="question-icon" bindtap="showHelp">?</view>
+  </view>
+    <button  class="upload-btn" bindtap="uploadFile" >
+      <image class="upload-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzQuMDcwMDY4MzU5Mzc1IiBoZWlnaHQ9IjMyLjEzMjUwNzMyNDIxODc1IiB2aWV3Qm94PSIwIDAgMzQuMDcwMDY4MzU5Mzc1IDMyLjEzMjUwNzMyNDIxODc1IiBmaWxsPSJub25lIj4KPHBhdGggICBmaWxsLXJ1bGU9ImV2ZW5vZGQiICBmaWxsPSIjN0Q4NTkyIiAgZD0iTTI2LjcgNy4yMkMyNS4zMDMzIDIuOTY0MTMgMjEuNDI2MyAtMy4yNzE2MmUtMDYgMTcuMDMgLTMuMjcxNjJlLTA2QzEyLjYzNTQgLTMuMjcxNjJlLTA2IDguNzY4NDMgMi45NjQxMyA3LjM3IDcuMjJDMy4yMTU1OCA3LjgxMDgyIDAgMTEuNTU3NCAwIDE2LjA3QzAgMTguMjQ5NyAwLjc1NTQxMiAyMC4zNDAyIDIuMTMgMjEuOTdDMi43NTE3MiAyMi43MDczIDMuODI0ODIgMjIuNzgzNCA0LjUzIDIyLjEzQzUuMjM1MTggMjEuNDc0OCA1LjMwMTcyIDIwLjM1MDcgNC42OCAxOS42MUMzLjg1NTU5IDE4LjYzNTQgMy40MSAxNy4zNzY3IDMuNDEgMTYuMDdDMy40MSAxMy4xMTc1IDUuNzAyNjkgMTAuNzEgOC41MiAxMC43MUw4LjY5IDEwLjcxQzkuNTAwNzkgMTAuNzEgMTAuMTk5OSAxMC4xMTM3IDEwLjM2IDkuMjhDMTAuOTk1MyA1Ljk3NDE0IDEzLjc5ODggMy41NyAxNy4wMyAzLjU3QzIwLjI2MjkgMy41NyAyMy4wNzMgNS45NzQxNCAyMy43MSA5LjI4QzIzLjg3MDEgMTAuMTEzNyAyNC41NjkyIDEwLjcxIDI1LjM4IDEwLjcxTDI1LjU1IDEwLjcxQzI4LjM2NzMgMTAuNzEgMzAuNjYgMTMuMTE3NSAzMC42NiAxNi4wN0MzMC42NiAxNy4zNzY3IDMwLjIwMjcgMTguNjM1NCAyOS4zOCAxOS42MUMyOC43NTY2IDIwLjM1MDcgMjguODI2NSAyMS40NzQ4IDI5LjUzIDIyLjEzQzI5Ljg1NTMgMjIuNDMgMzAuMjU5NyAyMi41OCAzMC42NiAyMi41OEMzMS4xMzE4IDIyLjU4IDMxLjYwMjcgMjIuMzY4MiAzMS45NCAyMS45N0MzMy4zMTI5IDIwLjM0MDIgMzQuMDcgMTguMjQ5NyAzNC4wNyAxNi4wN0MzNC4wNyAxMS41NTc0IDMwLjg1NDQgNy44MTA4MiAyNi43IDcuMjJaTTE4LjI0IDE0LjgwMjVDMTcuNTg0MSAxNC4xMTM1IDE2LjUyMTEgMTQuMTExNCAxNS44NSAxNC43ODI1TDEwLjc0IDE5Ljk1MjVDMTAuMDYzNyAyMC42Mzc5IDEwLjA0NTkgMjEuNzYyMSAxMC43IDIyLjQ3MjVDMTEuMzU0IDIzLjE4MTEgMTIuNDMzOCAyMy4yMDk3IDEzLjExIDIyLjUyMjVMMTUuMzMgMjAuMjcyNUwxNS4zMyAzMC4zNDI1QzE1LjMzIDMxLjMyOTggMTYuMDg5NyAzMi4xMzI1IDE3LjAzIDMyLjEzMjVDMTcuOTcwMSAzMi4xMzI1IDE4Ljc0IDMxLjMyOTggMTguNzQgMzAuMzQyNUwxOC43NCAyMC4zNzI1TDIwLjk0IDIyLjY4MjVDMjEuMjcyMiAyMy4wMzA2IDIxLjcwMzkgMjMuMjAyNSAyMi4xNCAyMy4yMDI1QzIyLjU3NjEgMjMuMjAyNSAyMy4wMTc5IDIzLjAzMDYgMjMuMzUgMjIuNjgyNUMyNC4wMTYxIDIxLjk4NDYgMjQuMDE2MSAyMC44NjA0IDIzLjM1IDIwLjE2MjVMMTguMjQgMTQuODAyNVoiPgo8L3BhdGg+Cjwvc3ZnPgo="></image>
+    在这里上传</button>
+  </view>
+
+</view>
+
+<view class="container2">
+  <form bindsubmit="submitForm">
+    <button class="btn2" formType="submit" style="font-size: 31.92rpx; color: #FFFFFF;">提交</button>
+  </form>
+</view>
+
+
+<image class="bottom-image" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjUyLjYwMDA5NzY1NjI1IiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDI1Mi42MDAwOTc2NTYyNSAxMDAiIGZpbGw9Im5vbmUiPgo8cGF0aCBkPSJNMTk2IDczLjVMMjA0IDYwTDIxMi41IDczLjVMMjI4LjUgNzMuNUwyMzcgNjBMMjQ0IDczLjVMMjQ0IDEwMEwxOTYgMTAwTDAgMTAwTDcuNSA4OC41TDQxLjUgODguNUw1NiA3My41TDE5NiA3My41WiIgICBmaWxsPSIjRkZGRkZGIiA+CjwvcGF0aD4KPHJlY3QgeD0iMjEyIiB5PSI4MCIgd2lkdGg9IjMiIGhlaWdodD0iMTAiICAgZmlsbD0iIzAwQURCNSIgPgo8L3JlY3Q+CjxyZWN0IHg9IjIyOCIgeT0iODAiIHdpZHRoPSIzIiBoZWlnaHQ9IjEwIiAgIGZpbGw9IiMwMEFEQjUiID4KPC9yZWN0Pgo8cGF0aCBkPSJNODYgMTAwTDcyLjUgODlMNzcuNSA4OUw5MSAxMDBMODYgMTAwWiIgICBmaWxsPSIjMDBBREI1IiA+CjwvcGF0aD4KPHBhdGggZD0iTTI0MyA4NUwyNTIuNSA4MkwyNTIuNSA4NUwyNDMgODhMMjQzIDg1WiIgICBmaWxsPSIjRkZGRkZGIiA+CjwvcGF0aD4KPHBhdGggZD0iTTI0MyA5NEwyNTIuNiA5N0wyNTIuNiA5NEwyNDMgOTFMMjQzIDk0WiIgICBmaWxsPSIjRkZGRkZGIiA+CjwvcGF0aD4KPHJlY3QgeD0iMTk2IiB5PSIzNSIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEzIiAgIGZpbGw9IiMwMEFEQjUiID4KPC9yZWN0Pgo8cmVjdCB4PSIxNTQiIHk9IjAiIHdpZHRoPSIzMyIgaGVpZ2h0PSIyMiIgICBmaWxsPSIjMDBBREI1IiA+CjwvcmVjdD4KPC9zdmc+Cg=="></image>

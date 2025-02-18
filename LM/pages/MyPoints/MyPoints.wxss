@@ -1,0 +1,249 @@
+/* pages/MyPoints/MyPoints.wxss */
+
+page{
+  height:1626rpx;
+  width: 750rpx;
+  background-color: #393E46;
+  }
+
+.container1{
+width: 750rpx;
+height: 261.26864rpx;
+background-color: #00ADB5;
+font-family: 'siyuanheiti', sans-serif; /* 字体样式：siyuanheiti */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+
+.points-label {
+  font-size: 62.784rpx; /* 36号大小 */
+  color: #FFE89E; /* 标黄 */
+  font-weight: bold;
+  margin-top: 27.44rpx;
+  margin-bottom: 27.44rpx; /* 上下间距 */
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+ margin-bottom: 10rpx;
+}
+
+.points-value {
+  font-size: 73.248rpx; /* 36号大小 */
+  color: #FFFFFF; 
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+  margin-bottom: 10rpx; /* 上下间距 */
+}
+
+
+.tab{
+  width: 100%;
+  margin: 25rpx  auto;
+display: flex;
+}
+/* 居中 */
+.tab text{  
+  flex: 1;
+  text-align: center;
+  align-content: flex-end;
+  font-size: 34.88rpx;
+  font-family: 'siyuanheiti', sans-serif;/* 字体样式：siyuanheiti */
+  color: #FFFFFF; /* 图标颜色 */
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+
+
+swiper-item:nth-of-type(1){
+
+text-align: center;
+}
+
+swiper-item:nth-of-type(2){
+
+  text-align: center;
+}
+
+/* 活动状态样式 */
+.active {
+  position: relative; /* 使伪元素定位相对于此元素 */
+  border: none; /* 移除原始的 border-bottom */
+  color: #00ADB5 !important; /* 选中状态的文字颜色， 修改优先级！！！ */
+}
+.active::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 179.632rpx; /* 横线的长度 */
+  height: 7rpx; /* 横线的厚度 */
+  background-color: #00ADB5;
+  transform: translateX(-50%); /* 向左移动50%以居中对齐 */
+}
+
+
+/* 竖向排列容器 */
+.vertical-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* 积分兑换项 */
+.item-container {
+  display: flex;
+  align-items: center;
+  width: 619.12rpx;
+  height: 181.376rpx; /* 确保高度与图片一致 */
+  justify-content: flex-start; /* 从起始位置开始排列 */
+  background-color: #ffffff;
+  color: #393E46;
+  font-family: 'siyuanheiti', sans-serif; /* 字体样式：siyuanheiti */
+  border-radius: 34.88rpx;
+  margin: 21rpx;
+  margin-left: auto; /* 整个item-container水平居中对齐 */
+  margin-right: auto; /* 水平居中对齐对齐 */
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.item-image {
+  width: 181.376rpx; /* 与容器高度一致 */
+  height: 181.376rpx; /* 与容器高度一致 */
+  margin-right: 30rpx;
+}
+
+/* 项目容器样式 */
+.item-details {
+  height: 181.376rpx;
+  width: 200.28rpx;
+  display: flex;
+  flex-direction: column; /* 垂直排列子元素 */
+  justify-content: flex-start; /* 子元素顶端对齐 */
+}
+
+/* 名称文本样式 */
+.name {
+  font-size: 41.856rpx;
+  color: #1C1A1A; 
+  max-width: 100%; /* 最大宽度为100%，防止溢出 */
+  white-space: nowrap; /* 不允许文本换行 */
+  overflow: hidden; /* 隐藏溢出部分 */
+  text-overflow: ellipsis; /* 使用省略号表示溢出部分 */
+  padding-top: 30rpx;
+  text-align: left; /* 设置文本左对齐 */
+}
+
+/* 描述文本样式 */
+.description {
+  font-size: 20.928rpx; 
+  color: #393E46; /* 字体颜色：中灰色 */
+  max-width: 100%; /* 最大宽度为100%，防止溢出 */
+  text-align: justify; /* 两端对齐文本 */
+  word-wrap: break-word; /* 允许长单词或URL地址强制换行 */
+  word-break: break-all; /* 允许长单词或URL地址强制换行 */
+  overflow: hidden; /* 隐藏溢出部分 */
+  text-overflow: ellipsis; /* 使用省略号表示溢出部分 */
+  padding-top: 25rpx;
+}
+
+/* 兑换按钮 */
+.btn {
+  width: 169.9628rpx;
+  height: 66.272rpx;
+  background-color: #00BAAD;
+  color: white;
+  border-radius: 41.856rpx;
+  display: inline-block; 
+  text-align: center; /* 水平居中 */
+  line-height: 66.272rpx; /* 垂直居中，与按钮高度一致 */
+  font-size: 27.904rpx; /* 设置合适的字体大小 */
+  margin: auto;
+}
+.btn::after {
+  border-radius: 41.856rpx;
+  border: 0; 
+}
+
+/* 历史界面 */
+.item-details2 {
+  height: 181.376rpx;
+  width: 200.28rpx;
+  display: flex;
+  flex-direction: column; /* 垂直排列子元素 */
+  justify-content: center; /* 垂直居中对齐 */
+  align-items: center; /* 水平居中对齐 */
+  text-align: center; /* 文本居中对齐 */
+}
+
+.meg{
+  font-size: 24.416rpx; 
+  color: #393E46; /* 字体颜色：中灰色 */
+  font-family: 'siyuanheiti', sans-serif; /* 字体样式：siyuanheiti */
+  max-width: 100%; /* 最大宽度为100%，防止溢出 */
+  text-align: left;
+  word-wrap: break-word; /* 允许长单词或URL地址强制换行 */
+  word-break: break-all; /* 允许长单词或URL地址强制换行 */
+  overflow: hidden; /* 隐藏溢出部分 */
+  text-overflow: ellipsis; /* 使用省略号表示溢出部分 */
+  margin-top: 10rpx 0;
+}
+
+.points-used{
+  width: 169.9628rpx;
+  height: 66.272rpx;
+  color: #00ADB5;
+  font-family: 'siyuanheiti', sans-serif; /* 字体样式：siyuanheiti */
+  font-weight: bold;
+  display: inline-block; 
+  text-align: center; /* 水平居中 */
+  line-height: 66.272rpx; /* 垂直居中，与按钮高度一致 */
+  font-size: 62.784rpx; /* 设置合适的字体大小 */
+  margin: auto;
+}
+
+
+/* scroll-view 的样式 */
+scroll-view {
+  flex: 1; /* 占据剩余空间 */
+  display: flex;
+  flex-direction: column;
+}
+
+/* 底部样式 */
+.footer {
+  width: 100%; /* 宽度100% */
+  display: flex; /* 使用flex布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  background-color: transparent;
+  padding: 40rpx 0; /* 添加上下内边距 */
+  margin-top: auto; /* 确保底部对齐 */
+}
+
+/* 底部文字样式 */
+.footer-text {
+  font-size: 34.88rpx; /* 字体大小 */
+  color: #ffffff; /* 字体颜色 */
+  font-family: 'siyuanheiti', sans-serif; /* 字体样式：siyuanheiti */
+  background-color: transparent;
+}
+
+
+
+/* 底部图片样式 */
+.bottom-image {
+  position: fixed; /* 固定位置 */
+  transform: translateX(-50%); /* 精确水平居中 */
+  width: 440.5344rpx; /* 图片宽度 */
+  height: 174.4rpx; /* 图片高度 */
+  background-color: transparent;
+  bottom: 0; /* 底部对齐 */
+  left: 50%; /* 水平居中 */
+}
