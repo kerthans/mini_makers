@@ -1,0 +1,8 @@
+{
+  "pages": [
+    "pages/editProfile/editProfile"
+  ],
+  "window": {
+    "navigationBarTitleText": "编辑个人资料"
+  }
+}
