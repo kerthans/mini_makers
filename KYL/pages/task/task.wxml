@@ -1,0 +1,45 @@
+<!-- pages/task/task.wxml -->
+<view class="container">
+
+  <view class="top-nav">
+    <view class="title">发布任务</view>
+      <image class="edit-icon" bindtap="ReturnLastPage" />
+    </view>
+
+  <view class="form-item">
+    <text class="text-box-a" >任务名称</text>
+    <input  class="input-box-a" placeholder="任务名称" bindinput="onInput" data-field="taskName" />
+
+    <text class="text-box-b">负责人</text>
+    <input class="input-box-b" placeholder="负责人" bindinput="onInput" data-field="responsible" />
+
+    <text class="text-box-c">任务内容</text>
+    <textarea  class="textarea-box" placeholder="活动简介"  bindinput="onInput" data-field="taskContent" />
+
+
+
+    <view class="picker-group" >
+      <text class="text-box-d">任务截止时间</text>
+
+      <picker mode="selector" range="{{years}}" bindchange="onYearChange" class="picker-year-model">
+        <view class="picker-item-year">{{selectedYear || '年份'}}</view>
+      </picker>
+      <picker mode="selector" range="{{months}}" bindchange="onMonthChange">
+        <view class="picker-item-month">{{selectedMonth || '月份'}}</view>
+      </picker>
+      <picker mode="selector" range="{{days}}" bindchange="onDayChange">
+        <view class="picker-item-day">{{selectedDay || '日'}}</view>
+      </picker>
+      <picker mode="selector" range="{{hours}}" bindchange="onHourChange">
+        <view class="picker-item-hour" >{{selectedHour || '小时'}}</view>
+      </picker>
+      <picker mode="selector" range="{{minutes}}" bindchange="onMinuteChange">
+        <view class="picker-item-minute" >{{selectedMinute || '分钟'}}</view>
+      </picker>
+    </view>
+  </view>
+
+  <button class="submit-btn" bindtap="onSubmit"  >提交</button>
+
+  <view class="bottom-image" mode="widthFix"  style="position: relative; left: 221rpx; top: 34rpx"></view>
+</view>
