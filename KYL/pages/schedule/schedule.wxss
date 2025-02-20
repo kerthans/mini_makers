@@ -1,0 +1,204 @@
+.container {/*页面的整体*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #222831;
+}
+/*导航栏*/
+.top-nav {/*导航栏容器*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* 宽度占满父容器 */
+  height: 139.52rpx;
+  position: relative;
+   left: 0rpx; 
+   top: -199rpx;
+}
+
+.edit-icon{/*导航栏左侧的小箭头*/
+  margin-top: 55.81rpx;
+  width:38.37rpx;
+  height:38.37rpx;
+  display: block; 
+  box-sizing: border-box; 
+  position: relative;
+   left: -410rpx;
+    top: 29rpx;
+  background-image: url("data:image/svg+xml,%3C?xml version='1.0' encoding='UTF-8'?%3E%3Csvg width='24' height='24' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M31 36L19 24L31 12' stroke='%23000000' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.title{/*导航栏的文本*/
+  display: flex;
+  margin-top:65rpx;
+  margin-right:-53rpx;
+  font-size:20px;
+  color: #ffffff;
+  font-weight: bolder;
+  position: relative;
+   left: 0rpx;
+    top: 28rpx;
+}
+
+.header {/*表头的整体*/
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 34.88rpx;
+  width: 615.63rpx;
+  height: 73.25rpx;
+}
+
+.table {/*表格整体*/
+  border: 2px solid #a6a6a6;
+  border-radius: 15px;
+  width: 605rpx;
+  height: 910.368rpx;
+  overflow: hidden;
+  position: relative;
+  top:-168.24rpx;
+}
+
+.table-header, .table-row {/*每一行的表格设计*/
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.table-header {/*表格的表头*/
+  background-color: #00adb5;
+  color: white;
+}
+
+.table-cell-header {/*表头的每个单元格*/
+  flex: 1;
+  text-align: center;
+  line-height: 73.25rpx;
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  width:201.67rpx;
+  height: 73.25rpx;
+}
+
+.table-cell-header-a {/*新闻稿表格*/
+  flex: 1;
+  text-align: center;
+  line-height: 73.25rpx;
+  border-right: 0px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  width:.201.67rpx;
+  height: 73.25rpx;
+  position: relative;
+  left: 7rpx;
+}
+
+.table-cell {/*表格主体的每个单元格*/
+  flex: 1;
+  text-align: center;
+  line-height: 64.39rpx;
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  width:210.22rpx;
+  height: 62rpx;
+}
+
+.table-cell:last-child {/*最后一个单元格*/
+  border-right: none;
+}
+
+.table-body {/*表身整体*/
+  width: 100%;
+}
+
+.table-row {/*表身的每一行*/
+  background-color: #f9f9f9;
+}
+
+.table-row:nth-child(even) {/*对偶数单元格*/
+  background-color: #ffffff;
+}
+
+.button-container-a {/*编辑按钮的容器*/
+  margin-top: 34.88rpx;
+  z-index: 4;
+  position: relative; 
+  left: 266rpx; 
+  top: -295rpx;}
+
+.button-container {/*提交和取消按钮的容器*/
+  display: flex;
+  justify-content: space-between; /* 平行排布 */
+  width: 50%;
+  margin-top: 17.44rpx;
+  z-index: 4;
+  position: relative;
+ left: 0rpx; 
+ top: -188.24rpx;
+}
+
+.button_submit {/*提交按钮*/
+  flex: 1;
+  color:#ffffff;
+  width: 186.61rpx;
+  height: 73.25rpx;
+  line-height: 69.76rpx;
+  border-radius: 21px;
+ z-index: 4;
+ position: relative;
+ left: -23.6rpx; 
+ background-color:#00ADB5;
+}
+
+.button_cancel{/*取消按钮*/
+  flex: 1;
+  color:#ffffff;
+  width: 186.6rpx;
+  height: 73.25rpx;
+  line-height: 69.76rpx;
+  border-radius: 21px;
+ z-index: 4;
+ position: relative;
+ left: 23.6px;
+  background-color: #E33C64;
+}
+
+.icon-edit{/*编辑按钮的图标*/
+  width: 100%; /* 图片宽度为容器宽度 */
+  height: 100%; /* 图片高度为容器高度 */
+  background-size: contain; /* 使图标自适应容器大小 */
+  background-repeat: no-repeat; /* 防止图标重复 */
+  background-position: center; /* 图标居中 */
+  position: relative;
+   left: -28rpx;
+    top: 67.2rpx;
+     width: 87.2rpx;
+      height: 87.2rpx; 
+      display: block;
+       box-sizing: border-box;
+       z-index: 99;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='50' height='50' viewBox='0 0 50 50' fill='none'%3E %3Cpath d='M17.4888 27.0813C17.4628 27.1145 17.4367 27.1493 17.4251 27.1912L15.4181 34.5496C15.3008 34.978 15.421 35.4396 15.7379 35.7651C15.9753 35.9967 16.2878 36.124 16.6206 36.124C16.7306 36.124 16.8406 36.111 16.9491 36.082L24.2553 34.0894C24.2669 34.0894 24.2727 34.0995 24.2813 34.0995C24.3652 34.0995 24.4478 34.0692 24.5101 34.0054L44.0469 14.4715C44.6271 13.8906 44.9455 13.099 44.9455 12.238C44.9455 11.2619 44.5316 10.2866 43.8066 9.56379L41.9616 7.71589C41.2381 6.99089 40.2613 6.57629 39.2859 6.57629C38.425 6.57629 37.6334 6.8947 37.0517 7.47419L17.5177 27.0133C17.4975 27.0321 17.5033 27.0596 17.4888 27.0813ZM42.1352 12.5585L40.1947 14.4976L37.0487 11.3018L38.9619 9.3887C39.2643 9.08489 39.8502 9.12903 40.1976 9.47771L42.0439 11.3257C42.2365 11.5181 42.3464 11.7742 42.3464 12.0274C42.3451 12.2351 42.2712 12.4233 42.1352 12.5585ZM20.9632 27.3881L35.0605 13.29L38.2079 16.4881L24.1367 30.5586L20.9632 27.3881ZM18.3946 33.104L19.4134 29.3648L22.131 32.0824L18.3946 33.104Z' fill='%23FFFFFF' %3E %3C/path%3E %3Cpath d='M43.3723 20.2996C42.6328 20.2996 42.0265 20.9008 42.0237 21.6504L42.0237 39.8624C42.0237 40.8175 41.248 41.5932 40.2915 41.5932L9.48345 41.5932C8.52837 41.5932 7.7498 40.8176 7.7498 39.8624L7.7498 10.1368C7.7498 9.18096 8.52837 8.40464 9.48345 8.40464L29.3256 8.40464C30.0693 8.40464 30.6729 7.80054 30.6729 7.05669C30.6729 6.31436 30.0693 5.70947 29.3256 5.70947L9.27798 5.70947C6.94966 5.70947 5.05469 7.60298 5.05469 9.93276L5.05469 40.068C5.05469 42.3977 6.94966 44.2905 9.27798 44.2905L40.4955 44.2905C42.8253 44.2905 44.7196 42.3977 44.7196 40.068L44.7196 21.6417C44.7165 20.9008 44.1118 20.2996 43.3723 20.2996Z' fill='%23FFFFFF' %3E %3C/path%3E %3C/svg%3E ");
+
+}
+.icon{/*编辑按钮的容器*/
+  width: 45rpx;
+  height: 45rpx;
+  
+}
+
+.bottom-image {/*背景图片的小猫*/
+  width: 440.53rpx;
+  height: 174.4rpx;
+  position: fixed;    
+  bottom: 0;                   
+  left: 50%;                  
+  transform: translateX(-50%);
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='252.60009765625' height='100' viewBox='0 0 252.60009765625 100' fill='none'%3E %3Cpath d='M196 73.5L204 60L212.5 73.5L228.5 73.5L237 60L244 73.5L244 100L196 100L0 100L7.5 88.5L41.5 88.5L56 73.5L196 73.5Z' fill='%23FFFFFF' %3E %3C/path%3E %3Crect x='212' y='80' width='3' height='10' fill='%2300ADB5' %3E %3C/rect%3E %3Crect x='228' y='80' width='3' height='10' fill='%2300ADB5' %3E %3C/rect%3E %3Cpath d='M86 100L72.5 89L77.5 89L91 100L86 100Z' fill='%2300ADB5' %3E %3C/path%3E %3Cpath d='M243 85L252.5 82L252.5 85L243 88L243 85Z' fill='%23FFFFFF' %3E %3C/path%3E %3Cpath d='M243 94L252.6 97L252.6 94L243 91L243 94Z' fill='%23FFFFFF' %3E %3C/path%3E %3Crect x='196' y='35' width='16' height='13' fill='%2300ADB5' %3E %3C/rect%3E %3Crect x='154' y='0' width='33' height='22' fill='%2300ADB5' %3E %3C/rect%3E %3C/svg%3E ");
+  background-size: contain; /* 使图标自适应容器大小 */
+  background-repeat: no-repeat; /* 防止图标重复 */
+  background-position: center; /* 图标居中 */
+  z-index: 99;
+
+}
