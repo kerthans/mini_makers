@@ -1,0 +1,48 @@
+<view class="container">
+
+  <view class="top-nav">
+    <view class="title">学年工作安排</view>
+      <image  class="edit-icon" bindtap="ReturnLastPage" />
+    </view>
+
+  <!-- 表格 -->
+  <view class="table" >
+    <!-- 表头 -->
+    <view class="table-header">
+      <view class="table-cell-header">活动文案</view>
+      <view class="table-cell-header">推文</view>
+      <view class="table-cell-header-a" style="position: relative; left: 0rpx; top: 0rpx">新闻稿</view>
+    </view>
+
+    <!-- 表格内容 -->
+    <view class="table-body">
+      <view class="table-row" wx:for="{{tableData}}" wx:key="index">
+        <view class="table-cell">
+        <input wx:if="{{isEditing}}" bindtab="onCellClick"
+        data-field="activity" data-index="{{index}}" >{{item.activity}}</input></view>
+        
+        <view class="table-cell"><input wx:if="{{isEditing}}" bindtab="onCellClick"
+        data-field="push" data-index="{{index}}">{{item.push}}</input></view>
+        
+        <view class="table-cell"><input  wx:if="{{isEditing}}" bindtab="onCellClick"
+        data-field="news" data-index="{{index}}" />{{item.news}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 按钮 -->
+   
+  <view class="button-container-a"  wx:if="{{!isEditing||level==3}}" bindtap="startEdit" >
+   <view class="icon"><view class="icon-edit" ></view></view>
+ 
+ 
+
+  </view>
+
+  <!-- 提交和取消按钮 -->
+  <view class="button-container" wx:if="{{isEditing}}">
+    <button class="button_submit" bindtap="submitEdit">提交</button>
+    <button class="button_cancel" bindtap="cancelEdit" >取消</button>
+  </view>
+  <view class="bottom-image" mode="widthFix"></view>
+</view>
