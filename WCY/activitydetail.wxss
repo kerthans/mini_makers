@@ -1,0 +1,141 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.box {
+  position: absolute;
+  right: 0rpx;
+  width: 160rpx;
+  height: 50rpx;
+  border-radius: 0rpx 0rpx 0rpx 35rpx;
+  background: rgba(0, 173, 181, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+}
+
+.boxtext {
+  font-size: 30rpx;
+  font-weight: 400;
+  line-height: 45rpx;
+  color: rgba(255, 255, 255, 1);
+}
+
+.postercontainer {
+  position: absolute;
+  width: 100%;
+  height: 700rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.catheadcontainer {
+  position: absolute;
+  top: 500rpx;
+  width: 100%;
+  height: 100%;
+  align-items: center; 
+  z-index: 8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='431' height='675' viewBox='0 0 431 675' fill='none'%3E %3Cpath d='M394.27 6.38177C388.423 -1.90749 377.541 -2.1603 371.41 5.84994L344.169 41.4359L85.7622 41.4359L61.15 6.54363C55.2654 -1.79908 44.3018 -1.99255 38.2 6.13898L3.67 52.1533C1.30337 55.3072 0 59.3427 0 63.5181L0 675L431 675L431 70.3394C431 67.4751 430.64 64.7082 429.968 62.0959C429.766 58.5034 428.598 55.0617 426.62 52.2574L394.27 6.38177Z' fill-rule='evenodd' fill='%23ffffff' %3E %3C/path%3E %3C/svg%3E ");
+  background-size: contain;
+  background-repeat: no-repeat; 
+}
+
+.content {
+  padding: 20rpx;
+  padding-top: 80rpx;
+}
+
+.activity-title {
+  font-size: 35rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.sections {
+  margin-bottom: 20rpx;
+  padding: 5rpx;
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infos {
+  display: flex;
+  margin-bottom: 10rpx;
+}
+
+
+
+
+
+.section {
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+}
+
+
+
+.sub-title {
+  font-size: 35rpx;
+  font-weight: 400;
+  margin-bottom: 30rpx;
+  padding-left: 40rpx;
+  color: rgba(56, 56, 56, 1);
+}
+
+.info {
+  display: flex;
+  margin-bottom: 30rpx;
+  padding-left: 30rpx;
+}
+
+
+.rectangle {
+  position: relative;
+  width: 10rpx;
+  height: 55rpx;
+  background-color: rgba(0, 173, 181, 1);
+  opacity: 1;
+  margin-bottom: 10rpx;
+  white-space: nowrap;
+}
+
+
+.copy-icon {
+  position: relative;
+  width: 24px;
+  height: 23px;
+  padding-left: 200rpx;
+  background-image: url("data:image/svg+xml,%3C?xml version='1.0' encoding='UTF-8'?%3E%3Csvg width='24' height='24' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163' stroke='%23333' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z' fill='none' stroke='%23333' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center; /* 图标居中 */
+}
+
+.bottom-image {
+  width: 360rpx;
+  height: 130rpx;
+  position: fixed;    
+  bottom: 0;                   
+  left: 50%;                  
+  transform: translateX(-50%);
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='180' height='65' viewBox='0 0 180 65' fill='none'%3E %3Cpath d='M139.667 47.775L145.368 39L151.425 47.775L162.827 47.775L168.884 39L173.872 47.775L173.872 65L139.667 65L0 65L5.34442 57.525L29.5725 57.525L39.905 47.775L139.667 47.775Z' fill='%23222831' %3E %3C/path%3E %3Crect x='151.06884765625' y='52' width='2.13775634765625' height='6.5' fill='%2300ADB5' %3E %3C/rect%3E %3Crect x='162.4703369140625' y='52' width='2.13775634765625' height='6.5' fill='%2300ADB5' %3E %3C/rect%3E %3Cpath d='M61.2827 64.9996L51.6627 57.8496L55.2257 57.8496L64.8456 64.9996L61.2827 64.9996Z' fill='%2300ADB5' %3E %3C/path%3E %3Cpath d='M173.159 55.2498L179.929 53.2998L179.929 55.2498L173.159 57.1998L173.159 55.2498Z' fill='%23222831' %3E %3C/path%3E %3Cpath d='M173.159 61.1003L180 63.0503L180 61.1003L173.159 59.1503L173.159 61.1003Z' fill='%23222831' %3E %3C/path%3E %3Crect x='139.66748046875' y='22.75' width='11.40142822265625' height='8.45001220703125' fill='%2300ADB5' %3E %3C/rect%3E %3Crect x='109.73876953125' y='0' width='23.51544189453125' height='14.29998779296875' fill='%2300ADB5' %3E %3C/rect%3E %3C/svg%3E ");
+  background-size: contain; /* 使图标自适应容器大小 */
+  background-repeat: no-repeat; /* 防止图标重复 */
+  background-position: center; /* 图标居中 */
+  z-index: 99;
+
+}
